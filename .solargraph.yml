@@ -1,0 +1,14 @@
+include:
+- "**/*.rb"
+exclude:
+- spec/**/*
+- test/**/*
+- vendor/**/*
+- ".bundle/**/*"
+require:
+- roda
+domains: []
+reporters:
+- rubocop
+- typecheck
+max_files: 5000
