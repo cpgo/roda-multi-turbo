@@ -1,9 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../app'
-
-class App
-  hash_path '/messages' do |r|
+App.hash_path '/messages' do |r|
     sleep 2
     r.on accept: 'text/html' do
       view('messages')
@@ -12,4 +9,3 @@ class App
       render('messages')
     end
   end
-end

@@ -1,9 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../app'
-
-class App
-  hash_path '/home' do |r|
+App.hash_path '/home' do |r|
     r.on accept: 'text/html' do
       view('hello')
     end
@@ -14,4 +11,3 @@ class App
       view('hello')
     end
   end
-end
